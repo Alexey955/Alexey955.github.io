@@ -18,10 +18,10 @@ ul.pagination li a.active {
 	border: 1px solid black;
 }
 table {
-border-collapse: collapse;/*убираем пустые промежутки между ячейками*/
-width: 60%;
-position: absolute; left: 20%;
-position: absolute;  top: 15%;
+  border-collapse: collapse;/*убираем пустые промежутки между ячейками*/
+  width: 60%;
+  position: absolute; left: 20%;
+  position: absolute;  top: 15%;
 }
 th, td {padding: 10px 15px;}
 tr:nth-child(even) { background-color: #F9F9F9; }/*закрашиваем чётные строки*/
@@ -41,5 +41,11 @@ table tr td+td+td+td+td+td{/*выравнивание 6го столбца*/
 }
 table tr td+td+td+td{
   text-align:right;
+}
+td.headColor:hover {
+  background: #E9E9E9; /* Цвет фона при наведении */
+   }
+tr.trAlterColor:hover > td {
+  opacity: 0.5;
 }
 
